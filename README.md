@@ -1,4 +1,7 @@
 .dotfiles
 =========
+###Inspired by the github .dotfile community [http://dotfiles.github.com](http://dotfiles.github.com)
 
-My Personal Collection of Dotfiles for OS X
+
+**My personal collection of .dotfiles for OS X**
+![Github dotfile mascots](http://dotfiles.github.com/images/forktocat.jpg)

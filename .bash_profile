@@ -6,7 +6,12 @@ done
 unset file
 
 # init z   https://github.com/rupa/z
-. ~/code/z/z.sh
+# I had to remove this line because it was throwing up a
+# error on Terminal when initiated for the first time.
+#
+# -bash: /Users/GrayGhost/code/z/z.sh: No such file or directory
+#
+#. ~/code/z/z.sh
 
 # init rvm
 source ~/.rvm/scripts/rvm

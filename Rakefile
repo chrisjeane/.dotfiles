@@ -1,5 +1,12 @@
 task :default => [:install]
 
 task :install do
-  Dir.glob('.*') { |f| FileUtils.cp(f, `echo $HOME`.strip, verbose: true) if f != '.' && f != '..' && f != '.git' }
+  home = `echo $HOME`.strip
+  Dir.glob( '.*' ) do |f|
+    if f != '.' && f != '..' && f != '.git' && f != '.DS_Store'
+      FileUtils.cp( f, home, verbose: true )
+    end
+  end
+
+  FileUtils.cp( 'install-deps.sh', home, verbose: true )
 end
